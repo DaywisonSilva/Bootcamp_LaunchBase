@@ -1,6 +1,4 @@
-<p style="text-align: center;">
-    <img src="imagens/Launchbase.png" alt="Logo Launchbase">
-</p>
+<img src="imagens/Launchbase.png" alt="Logo Launchbase" style="display: block; margin: auto;">
 
 
 #
