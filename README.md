@@ -1,4 +1,7 @@
-![Logo LaunchBase](imagens/Launchbase.png)
+<p style="text-align: center;">
+    <img src="imagens/Launchbase.png" alt="Logo Launchbase">
+</p>
+
 
 #
 > "Não temos uma chance para fazer muitas coisas, então cada uma tem que ser excelente. Porque isso é a nossa vida. A vida é curta, e então você morre, você sabe? E todos nós escolhemos o que fazer das nossas vidas. Então é melhor que seja algo muito bom. É melhor que valha a pena." - **Steve Jobs**
