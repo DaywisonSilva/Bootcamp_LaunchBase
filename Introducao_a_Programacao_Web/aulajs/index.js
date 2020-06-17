@@ -100,7 +100,7 @@ const idade = 18
 // console.log(!(5 < 6)) // false
 
 // ------------ AULA 8 -------------------
-
+/*
 const alunos = [
     {
         nome: "Mayk",
@@ -127,4 +127,71 @@ console.log(nomeDeAlunos);
 console.log(media);
 
 var aluno1 = [0, 1, 2]
+*/
 
+// Criar um programa que calcula a média das turmas de alunos eenvia mensagem do cálculo da média
+
+const alunosDaTurmaA = [
+    {
+        nome: "Mayk",
+        nota: 1.8
+    },
+
+    {
+        nome: "Diego",
+        nota: 10
+    },
+
+    {
+        nome: "Fulano",
+        nota: 2
+    },
+    {
+        nome: "Mais um aluno",
+        nota: 10
+    }
+]
+
+const alunosDaTurmaB = [
+    {
+        nome: "Cleiton",
+        nota: 8
+    },
+
+    {
+        nome: "Robson",
+        nota: 10
+    },
+
+    {
+        nome: "Siclano",
+        nota: 2
+    },
+    {
+        nome: "Novo aluno",
+        nota: 9
+    }
+]
+
+const media1 = calculaMedia(alunosDaTurmaA);
+const media2 = calculaMedia(alunosDaTurmaB);
+
+function calculaMedia(alunos){
+    let soma = 0;
+    for(let i = 0; i < alunos.length; i++){
+        soma += alunos[i].nota;
+    }
+    let media = soma/alunos.length;
+    return media;
+}
+
+function enviaMensagem(media, turma){
+    if(media > 5){
+        console.log(`A média da ${turma} foi de ${media}. Parabéns!`)
+    }else{
+        console.log(`A média da ${turma} é menor que 5.`)
+    }
+}
+
+enviaMensagem(media1, 'turmaA');
+enviaMensagem(media2, 'turmaB');
