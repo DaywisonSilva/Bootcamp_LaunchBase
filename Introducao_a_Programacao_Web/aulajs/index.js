@@ -1,46 +1,46 @@
 //---------- AULA 1 -------------------
-// const nome = 'Mayk Bootcamp';
-// console.log(nome);
+// const name = 'Mayk Bootcamp';
+// console.log(name);
 
 
 // --------- AULA 2 --------------------
-// Criar um programa que calcula a média das notas entre os alunos e envia mensagem do cálculo da média.
+// Criar um programa que calcula a média das grades entre os students e envia mensagem do cálculo da média.
 
-// const nome = "Mayk"
-// const nome2 = 'Diego ${nome}'
-// const nome3 = `Valeska e ${nome}`
+// const name = "Mayk"
+// const name2 = 'Diego ${name}'
+// const name3 = `Valeska e ${name}`
 
-// console.log(nome2)
+// console.log(name2)
 
 // --------- AULA 3 ---------------------
-// const aluno01 = "Mayk"
-// const notaAluno01  = 9.8
+// const student01 = "Mayk"
+// const gradeAluno01  = 9.8
 
-// const aluno02 = 'Diego'
-// const notaAluno02 = 10
+// const student02 = 'Diego'
+// const gradeAluno02 = 10
 
-// const aluno03 = 'Fulano'
-// const notaAluno03 = 2
+// const student03 = 'Fulano'
+// const gradeAluno03 = 2
 
-// const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
-// console.log(media)
+// const average = (gradeAluno01 + gradeAluno02 + gradeAluno03) / 3
+// console.log(average)
 
 // --------- AULA 4 ---------------------
 
-// const aluno01 = "Mayk"
-// const notaAluno01  = 9.8
+// const student01 = "Mayk"
+// const gradeAluno01  = 9.8
 
-// const aluno02 = 'Diego'
-// const notaAluno02 = 10
+// const student02 = 'Diego'
+// const gradeAluno02 = 10
 
-// const aluno03 = 'Fulano'
-// const notaAluno03 = 2
+// const student03 = 'Fulano'
+// const gradeAluno03 = 2
 
-// const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
+// const average = (gradeAluno01 + gradeAluno02 + gradeAluno03) / 3
 
 //Se a média for maior que 5, parabenizar a turma
-// if (media > 5){
-//     console.log(`A nota foi de ${media}. Parabéns!!`)
+// if (average > 5){
+//     console.log(`A grade foi de ${average}. Parabéns!!`)
 // }else{
 //     console.log('A média é menor que 5')
 // }
@@ -101,97 +101,125 @@ const idade = 18
 
 // ------------ AULA 8 -------------------
 /*
-const alunos = [
+const students = [
     {
-        nome: "Mayk",
-        nota: 9.8
+        name: "Mayk",
+        grade: 9.8
     },
     
     {
-        nome: "Diego",
-        nota: 10
+        name: "Diego",
+        grade: 10
     },
 
     {
-        nome: "Fulano",
-        nota: 2
+        name: "Fulano",
+        grade: 2
     }
 ]
 
 
-const media = ((alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3);
+const average = ((students[0].grade + students[1].grade + students[2].grade) / 3);
 
-const nomeDeAlunos = (alunos[0].nome+" "+ alunos[1].nome+" "+ alunos[2].nome)
+const nameDeAlunos = (students[0].name+" "+ students[1].name+" "+ students[2].name)
 
-console.log(nomeDeAlunos);
-console.log(media);
+console.log(nameDeAlunos);
+console.log(average);
 
-var aluno1 = [0, 1, 2]
+var student1 = [0, 1, 2]
 */
 
-// Criar um programa que calcula a média das turmas de alunos eenvia mensagem do cálculo da média
+// Criar um programa que calcula a média das turmas de students eenvia mensagem do cálculo da média
 
-const alunosDaTurmaA = [
+const classA = [
     {
-        nome: "Mayk",
-        nota: 1.8
+        name: "Mayk",
+        grade: 1.8
     },
 
     {
-        nome: "Diego",
-        nota: 10
+        name: "Diego",
+        grade: 10
     },
 
     {
-        nome: "Fulano",
-        nota: 2
+        name: "Fulano",
+        grade: 2
     },
     {
-        nome: "Mais um aluno",
-        nota: 10
+        name: "Mais um student",
+        grade: 10
     }
 ]
 
-const alunosDaTurmaB = [
+const classB = [
     {
-        nome: "Cleiton",
-        nota: 8
+        name: "Cleiton",
+        grade: 8
     },
 
     {
-        nome: "Robson",
-        nota: 10
+        name: "Robson",
+        grade: 10
     },
 
     {
-        nome: "Siclano",
-        nota: 2
+        name: "Siclano",
+        grade: 2
     },
     {
-        nome: "Novo aluno",
-        nota: 9
+        name: "Novo student",
+        grade: 9
     }
 ]
 
-const media1 = calculaMedia(alunosDaTurmaA);
-const media2 = calculaMedia(alunosDaTurmaB);
-
-function calculaMedia(alunos){
+function calculateAverage(students) {
     let soma = 0;
-    for(let i = 0; i < alunos.length; i++){
-        soma += alunos[i].nota;
+    for (let i = 0; i < students.length; i++) {
+        soma += students[i].grade;
     }
-    let media = soma/alunos.length;
-    return media;
+    let average = soma / students.length;
+    return average;
 }
 
-function enviaMensagem(media, turma){
-    if(media > 5){
-        console.log(`A média da ${turma} foi de ${media}. Parabéns!`)
-    }else{
-        console.log(`A média da ${turma} é menor que 5.`)
+function sendMessage(average, turma) {
+    if (average > 5) {
+        console.log(`${turma} average: ${average}. Congrats!`)
+    } else {
+        console.log(`${turma} average: ${average}. Is not good.`)
     }
 }
 
-enviaMensagem(media1, 'turmaA');
-enviaMensagem(media2, 'turmaB');
+
+function markAsFlunked(student) {
+    student.flunked = false;
+    if (student.grade < 5) {
+        student.flunked = true;
+    }
+    
+}
+
+markAsFlunked(classA)
+
+function sendFlunkedMessage(student) {
+    if (student.flunked) {
+        console.log(`The student ${student.name} is flunked!`)
+    }
+}
+
+function studentReprovados(students) {
+    for (let student of students) {
+        markAsFlunked(student)
+        sendFlunkedMessage(student)
+    }
+}
+
+
+const average1 = calculateAverage(classA);
+const average2 = calculateAverage(classB);
+
+studentReprovados(classA)
+studentReprovados(classB)
+
+sendMessage(average1, 'classA');
+sendMessage(average2, 'classB');
