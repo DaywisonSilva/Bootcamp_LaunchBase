@@ -1,0 +1,132 @@
+:root{
+    --green-color: rgb(47, 255, 54);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body, html{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 231, 231);
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: auto;
+    background-color: rgb(57, 57, 57);
+    border-bottom: 10px solid var(--green-color);
+}
+header ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    flex-grow: 1;
+    flex-basis: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(233, 233, 233);
+    align-items: center;
+    transition: all .5s linear;
+    cursor: pointer;
+}
+header ul li:hover{
+    color: var(--green-color);
+    transform: scale(1.3);
+}
+header ul li i{
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+header ul li a{
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+}
+section{
+    width: 100%;
+    padding: 0 12%;
+    box-sizing: border-box;
+}
+.sobre-nos{
+    color: rgb(81, 81, 81);
+    text-indent: 15px;
+    text-align: center;
+
+}
+.sobre-nos img{
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid var(--green-color);
+    margin: 20px auto;
+    display: block;
+    box-sizing: border-box;
+}
+.tecnologias{
+    margin-bottom: 50px;
+}
+.sobre-nos h1{
+    font-size: 2em;
+    text-align: center;
+    color: #6633cc;
+    text-shadow: 1px 1px 2px var(--green-color);
+}
+
+.tecnologias h2{
+    font-size: 20px;
+    color: rgb(57, 57, 57);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.tecnologias ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.tecnologias img{
+    width: 80px;
+    display: block;
+}
+
+footer{
+    width: 100%;
+    padding: 0 25%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    background-color: var(--green-color);
+    box-sizing: border-box;
+}
+footer i{
+    color: rgba(0, 0, 0, 0.83);
+    font-size: 2em;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+footer i:hover{
+    color: #6633cc;
+    font-size: 2.5em;
+}
+@media (min-width: 600px){
+    .sobre-nos img{
+        width: 350px;
+    }
+}
