@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="imagens/Launchbase.png" alt="Logo Launchbase">
+    <img src="launchbase_logo.png" alt="Logo Launchbase">
 </p>
 
 #
@@ -14,9 +14,5 @@ Meu nome é Daywison Silva, tenho 20 anos e amo programação web front-end.
 
 Ganhei uma bolsa da comunidade Vue.js Norte, e estou tendo a chance de participar desse bootcamp que está sendo incrível. Estou fazendo bastante networking, e ajudando alguns alunos com dúvidas relacionadas ao conteúdo. Tenho muita vontade de aprender e corro atrás das soluções dos problemas que cercam o meu cotidiano, acredito que seja até por isso que gosto tanto de programação, de resolver problemas.
 
-#
-
-### **Site pessoal**
-[Clique aqui para ser redirecionado](https://daywisonsilva.github.io/website/)
 
 

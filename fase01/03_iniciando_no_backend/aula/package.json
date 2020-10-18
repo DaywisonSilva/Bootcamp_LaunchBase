@@ -1,0 +1,28 @@
+{
+  "name": "mykebrito_portfolio",
+  "version": "1.0.0",
+  "description": "project to learn about javascript at backend development",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaywisonSilva/Bootcamp_LaunchBase.git"
+  },
+  "keywords": [
+    "mykebrito",
+    "nodejs",
+    "javascript",
+    "backend"
+  ],
+  "author": "Daywison Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaywisonSilva/Bootcamp_LaunchBase/issues"
+  },
+  "homepage": "https://github.com/DaywisonSilva/Bootcamp_LaunchBase#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
