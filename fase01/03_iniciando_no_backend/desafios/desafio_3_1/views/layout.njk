@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daywison Silva">
+        {% block head %}
+        {% endblock %}
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/f0f3c94151.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="header-nav-ul">
+                    <li>
+                        <a href="/">Início</a>
+                    </li>
+                    <li>
+                        <a href="https://discordapp.com/invite/gCRAFhc">Comunidade</a>
+                    </li>
+                    <li>
+                        <a href="mailto: oi@rocketseat.com.br">E-mail</a>
+                    </li>
+                    <li>
+                        <a href="tel: +5547992078767">Telefone</a>
+                    </li>
+                    <li>
+                        <a href="/conteudo">Conteúdo</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}
+        {% endblock %}
+            <footer>
+                <p>Rocketseat &copy; 2020 - Todos os direitos reservados</p>
+                <div>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+            </footer>
+            {% block script %}
+            {% endblock %}
+        </body>
+    </html>

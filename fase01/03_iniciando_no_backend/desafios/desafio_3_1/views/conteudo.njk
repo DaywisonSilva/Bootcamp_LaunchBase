@@ -1,0 +1,45 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Conteudo</title>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <article class="grid-container">
+            <div class="card-one card" id='0'>
+                <span>01</span>
+                <img src="imagens/starter.svg" alt="logo do curso starter da rocketseat">
+                <p>
+                    <em>Torne-se um programador desejado</em>
+                    no merdado com esses cursos gratuitos.</p>
+            </div>
+            <div class="card-two card" id='1'>
+                <span>02</span>
+                <img src="imagens/launchbase.svg" alt="logo do curso starter da rocketseat">
+                <p>
+                    <em>Domine programação do zero</em>
+                    e tenha acesso às melhores oportunidades do mercado.</p>
+            </div>
+            <div class="card-three card" id='2'>
+                <span>03</span>
+                <img src="imagens/gostack.svg" alt="logo do curso starter da rocketseat">
+                <p>
+                    <em>Treinamento imersivo</em>
+                    nas tecnologias mais modernas de desenvolvimento web e mobile.</p>
+
+            </div>
+        </article>
+        <div class="modal close-modal">
+            <div class="div-modal">
+                <i class="far fa-window-maximize" id="maximize"></i>
+                <i class="far fa-window-close" id="close"></i>
+                <iframe src="" frameborder="0" class="iframe-modal"></iframe>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block script %}
+<script src="script.js"></script>
+{% endblock %}
