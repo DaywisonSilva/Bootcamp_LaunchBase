@@ -1,0 +1,18 @@
+.error-info{
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    background-color: rgb(156, 21, 4);
+    box-shadow: 0 0 20px rgba(51, 51, 51, 0.63);
+    border-radius: 30px;
+    margin-top: calc(50vh - 200px);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+

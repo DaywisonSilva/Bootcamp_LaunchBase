@@ -24,3 +24,6 @@ server.get('/', (req, res) => {
 server.get('/conteudo', (req, res) => {
     res.render("conteudo")
 })
+server.use((req, res) => {
+    res.status(404).render("not-found");
+})
