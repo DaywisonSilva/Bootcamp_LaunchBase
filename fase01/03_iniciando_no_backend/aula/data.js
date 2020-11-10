@@ -3,7 +3,8 @@ module.exports = [
         id: "GykTLqODQuU", 
         title: "Formulário Animado com JS puro e CSS Animation | Myke Brito",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "HN1UjzRSdBk", 
@@ -12,7 +13,7 @@ module.exports = [
         price: "Free"
     },
     {
-        id: "rAzHvYnQ8DYU", 
+        id: "rAzHvYnQ8DY", 
         title: "Array: Higher Order Functions | Myke Brito",
         duration: "54 min",
         price: "Free"
@@ -21,7 +22,8 @@ module.exports = [
         id: "ghTrp1x_1As", 
         title: "O que é API? REST e RESTful? | Myke Brito",
         duration: "33 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
     {
         id: "GSqR2i-Pq6o", 
@@ -33,7 +35,8 @@ module.exports = [
         id: "2alg7MQ6_sI", 
         title: "Como usar Git e Github na prática: Guia para iniciantes | Myke Brito",
         duration: "33 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     }
 ]
 

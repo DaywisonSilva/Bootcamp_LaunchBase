@@ -15,7 +15,8 @@ server.set("view engine", "njk");
 
 nunjucks.configure("views", {
     express: server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
 // pegando os dados de about
@@ -34,19 +35,20 @@ server.get('/portfolio', (req, res) => {
     res.render("portfolio", { items: videos });
 })
 
+server.get('/video', (req, res) => {
+    // pega o id da url
+    const id = req.query.id;
+    
+    // faz um loop parecido com o forEach
+    const video = videos.find(video => video.id == id)
+
+    if(!video) {
+        return res.send('video not found')
+    }
+
+    res.render("video", { item: video })
+})
+
 server.listen(5000, () => {
     console.log('Server is running');
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
