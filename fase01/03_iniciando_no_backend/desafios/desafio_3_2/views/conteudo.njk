@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Conteudo</title>
+{% endblock %}
+
+{% block content %}
+    <main>
+        <article class="grid-container">
+            {% for curso in cursos %}
+                <div class="{{curso.class}} card" id='{{ curso.id }}'>
+                    <span>01</span>
+                    <img src='imagens/{{curso.image}}' alt="logo do curso starter da rocketseat">
+                    <p>{{ curso.texto }}</p>
+                </div>
+            {% endfor %}
+        </article>
+        <div class="modal close-modal">
+            <div class="div-modal">
+                <i class="far fa-window-maximize" id="maximize"></i>
+                <i class="far fa-window-close" id="close"></i>
+                <iframe src="" frameborder="0" class="iframe-modal"></iframe>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% block script %}
+    <script src="script.js"></script>
+{% endblock %}
